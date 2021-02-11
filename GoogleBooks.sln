@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleBooks.DomainModel", "GoogleBooks.DomainModel\GoogleBooks.DomainModel.csproj", "{C82E35BC-8EC2-497E-BB5A-E6FAAD31C225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleBooks.Service", "GoogleBooks.Service\GoogleBooks.Service.csproj", "{DBB38CEC-10C2-468B-9615-271B72458984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleBooks.WebApi", "GoogleBooks.WebApi\GoogleBooks.WebApi.csproj", "{805616BB-C32F-43B6-A63A-10FB4BC6C94B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C82E35BC-8EC2-497E-BB5A-E6FAAD31C225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82E35BC-8EC2-497E-BB5A-E6FAAD31C225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82E35BC-8EC2-497E-BB5A-E6FAAD31C225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82E35BC-8EC2-497E-BB5A-E6FAAD31C225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB38CEC-10C2-468B-9615-271B72458984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB38CEC-10C2-468B-9615-271B72458984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB38CEC-10C2-468B-9615-271B72458984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB38CEC-10C2-468B-9615-271B72458984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805616BB-C32F-43B6-A63A-10FB4BC6C94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805616BB-C32F-43B6-A63A-10FB4BC6C94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805616BB-C32F-43B6-A63A-10FB4BC6C94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805616BB-C32F-43B6-A63A-10FB4BC6C94B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2A25E5D-0508-4762-82E8-9A5E19FB0413}
+	EndGlobalSection
+EndGlobal
