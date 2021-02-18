@@ -1,4 +1,4 @@
-﻿using GoogleBooks.Services.Abstract;
+﻿using GoogleBooks.Service.Abstract;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -6,15 +6,15 @@ namespace GoogleBooks.WebApi.Controllers
 {
     public class BooksController : ApiController
     {
-        private IGoobleBookService googleBooksService;
-        public BooksController(IGoobleBookService googleBooksService)
+        private readonly IListGoobleBookService listGoogleBooksService;
+        public BooksController(IListGoobleBookService listGoogleBooksService)
         {
-            this.googleBooksService = googleBooksService;
+            this.listGoogleBooksService = listGoogleBooksService;
         }
 
         public async Task<string> Get(string p)
         {
-            return await googleBooksService.Execute(p, 0, 40);
+            return await listGoogleBooksService.Execute(p, 0, 40);
         }
     }
 }

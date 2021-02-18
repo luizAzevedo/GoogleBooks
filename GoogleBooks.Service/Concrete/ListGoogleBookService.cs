@@ -1,18 +1,12 @@
-﻿using GoogleBooks.Services.Abstract;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
+﻿using GoogleBooks.Service.Abstract;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using System.Linq;
-using GoogleBooks.DomainModel.Entities;
 
-namespace GoogleBooks.Services.Concrete
+namespace GoogleBooks.Service.Concrete
 {
-    public class GoogleBookService : IGoobleBookService
+    public class ListGoogleBookService : IListGoobleBookService
     {
         public async Task<string> Execute(string query, int offset, int count)
         {
@@ -33,10 +27,6 @@ namespace GoogleBooks.Services.Concrete
                     using (HttpContent content = response.Content)
                     {
                         result = await response.Content.ReadAsStringAsync();
-
-                        //var result1 = JsonConvert.DeserializeObject(jsonString);
-
-                        //result = JsonConvert.SerializeObject(new EnumerableQuery<KeyValuePair<string, JToken>>((IEnumerable<KeyValuePair<string, JToken>>)result1).SelectMany(y => y.Value).ToList(), new KeyValuePairConverter());
                     }
                 }
                 catch (Exception err)
